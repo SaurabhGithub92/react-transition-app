@@ -8,8 +8,10 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 ##Before the transition application look
+![alt text](src/assets/Before_Transition.png)
 
-
+##After the transition application look
+![alt text](src/assets/After_Transition.png)
 
 ## Expanding the ESLint configuration
 
