@@ -2,13 +2,15 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import useNetworkStatus from './hooks/useNetworkStatus'
 
-function App() {
+const App: React.FC = () => {
   const [count, setCount] = useState(0)
+  const isNetworkOnline = useNetworkStatus();
 
   return (
     <>
-      <div>
+      <div className={isNetworkOnline ? 'app online' : 'app offline'}>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>

@@ -1,3 +1,15 @@
+.app {
+  transition: all 0.3s ease;
+}
+
+.app.offline {
+  filter: grayscale(100%);
+}
+
+.app.online {
+  filter: none;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
